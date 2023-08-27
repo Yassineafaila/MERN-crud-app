@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img,svg,picture{
+    max-width: 100%;
+    display: block;
+}
+.App{
+    background-color:#eee;
+}
+.Admin-container input{
+    caret-color: #7e62f0;
+}
+.Admin-container input:focus {
+    border:1px solid #7e62f0;
+}
+.Admin-container button{
+    background-color: #7e62f0;
+}
+.Admin-container h3::before{
+    content: "";
+    position: absolute;
+    width: 6.25rem;
+    height: 0.1875rem;
+    background-color: #7e62f0;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    bottom: -5px;
+    left: 0;
+}
+
+/* ---modal--- */
+#overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+}
+#wrapper-modal-success{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#modal-success{
+    background-color: #ffffff;
+    z-index: 1000;
+}
+#modal-success h2{
+    color: #02cac3;
+}
+/* ---Admin-page-- */
+.Admin-page h1{
+    color: #1b2950;
+}
+.Admin-page .Add{
+    background-color: #5392ea;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.Admin-page .Add:hover{
+    background-color: #284aa5;
+}
+.Admin-page .logout{
+    background-color: #ff5757;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.Admin-page .logout:hover{
+    background-color: #b10303;
+}
+
+.Admin-page table tbody tr:nth-child(odd){
+    background-color: white;
+}
+
+/* ---Add-Employee-Form-- */
+.Add-employee button.Add{
+    background-color: #7e62f0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.Add-employee button.Add:hover{
+    background-color: #5033c6;
+    
+}
+.Add-employee h3::before{
+    content: "";
+    position: absolute;
+    width: 6.25rem;
+    height: 0.1875rem;
+    background-color: #7e62f0;
+    border-radius: 1.25rem;
+    -webkit-border-radius: 1.25rem;
+    -moz-border-radius: 1.25rem;
+    -ms-border-radius: 1.25rem;
+    -o-border-radius: 1.25rem;
+    bottom: -5px;
+    left: 0;
+}
+.Add-employee button.Cancel{
+    background-color: #ff5757;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.Add-employee button.Cancel:hover{
+    background-color: #f52727;
+}
+/* ---modal-error-- */
+#wrapper-modal-Error{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+#modal-Error{
+    background-color: #ffffff;
+    z-index: 1000;
+}
+/* ---utilities-classe-- */
+.Admin-child .app-button{
+    padding: 1rem 1.2rem;
+    background-color: gray;
+    color: black;
+    border-radius: 0.3125rem;
+    -webkit-border-radius: 0.3125rem;
+    -moz-border-radius: 0.3125rem;
+    -ms-border-radius: 0.3125rem;
+    -o-border-radius: 0.3125rem;
+}
