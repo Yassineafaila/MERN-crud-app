@@ -10,7 +10,11 @@ connectDb()
 //connect the backend with frontend:
 app.use(express.json())
 app.use(
-  cors()
+  cors({
+    origin: ["http/localhost:4000", "https://mern-crud-app-o7or.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials:true
+  })
 );
 //routes:
 app.use(router)
